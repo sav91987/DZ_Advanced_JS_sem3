@@ -22,7 +22,7 @@ const divEl = document.querySelector(".container_feedback");
 
 initialData.forEach((element) => {
     divEl.innerHTML += `
-    <h2 class="h2_feedback">${element.product}</h2>
+    <h2 class="h2_feedback" style="cursor: pointer;">${element.product}</h2>
     <div></div>
     <button class="btn_feedback">Добавить отзыв</button>`;
 });
@@ -35,7 +35,7 @@ const setLsH2Text = (targetEl) => {
 };
 
 const showFeedbacks = (targetEl) => {
-    setDataToLS(lsKeyH2Text, targetEl.textContent); // разобраться, какая то хуйня попадает
+    setDataToLS(lsKeyH2Text, targetEl.textContent);
     targetEl.nextElementSibling.innerHTML = "";
     let count = 0;
 

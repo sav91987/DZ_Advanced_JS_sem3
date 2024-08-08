@@ -1,0 +1,1 @@
+Запускать lookFeedback.html

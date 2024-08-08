@@ -1,6 +1,5 @@
 const getDataFromLS = (key) => {
-    const data = JSON.parse(localStorage.getItem(key));
-    
+    const data = JSON.parse(localStorage.getItem(key));  
     if (!data) {
         return [];
     }

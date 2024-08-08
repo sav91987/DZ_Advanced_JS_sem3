@@ -3,10 +3,12 @@ const lsKeyFB = "feedback";
 const lsKeyH2Text = "h2Text";
 
 const inputEl = document.querySelector(".feedback__input");
+inputEl.focus();
 const btnEl = document.querySelector(".feedback__btn");
 const pEl = document.querySelector(".feedback__message");
 
 btnEl.addEventListener("click", () => {
+    inputEl.focus();
     if (inputEl.value.trim() === "") {
         pEl.textContent = "Вы ничего не написали. Оставьте отзыв.";
         inputEl.value = "";
